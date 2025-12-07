@@ -18,8 +18,8 @@ public class ValidationResult {
         this.rawPayload = rawPayload;
     }
 
-    public static ValidationResult valid(HealthValidated v) {
-        return new ValidationResult(true, v, null, null, null);
+    public static ValidationResult valid(HealthValidated validatedData) {
+        return new ValidationResult(true, validatedData, null, null, null);
     }
 
     public static ValidationResult invalid(String code, String msg, Object raw) {
